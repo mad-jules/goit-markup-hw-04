@@ -457,7 +457,6 @@ main {
   background-color: var(--dark);
   padding-top: 100px;
   padding-bottom: 100px;
-  align-items: baseline;
 }
 
 .footer-studio,
@@ -477,8 +476,17 @@ main {
   margin-right: 120px;
 }
 
+.socialmedia {
+  align-items: baseline;
+}
+
 .socialmedia-text {
   font-weight: 500;
   color: var(--white-background);
   margin-bottom: 16px;
+}
+
+.socialmedia-link.link-footer:hover,
+.socialmedia-link.link-footer:focus {
+  background-color: var(--success);
 }
