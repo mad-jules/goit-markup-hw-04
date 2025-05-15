@@ -446,7 +446,7 @@ main {
 }
 
 .portfolio-list-item:hover .overlay {
-  transform: translate(0%);
+  transform: translateY(0%);
 }
 
 .portfolio-list-item:hover {
