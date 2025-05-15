@@ -371,9 +371,7 @@ main {
   cursor: pointer;
 }
 
-.footer-container {
-  display: flex;
-}
+
 
 .footer-container .team-icon-list {
   gap: 16px;
@@ -476,7 +474,7 @@ main {
   margin-right: 120px;
 }
 
-.socialmedia {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
