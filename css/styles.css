@@ -79,6 +79,8 @@ main {
 
 .header {
   border-bottom: 1px solid var(--acent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -111,7 +113,7 @@ main {
 }
 
 .nav-link.active {
-  color: var(--primary-brand);
+  color: var(--pressed-state);
   position: relative;
 }
 
@@ -125,7 +127,7 @@ main {
   content: "";
   height: 4px;
   border-radius: 2px;
-  background-color: var(--primary-brand);
+  background-color: var(--pressed-state);
 }
 
 .nav-list-item {
@@ -273,11 +275,15 @@ main {
 }
 
 .benefit-icon {
-  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 8px;
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
   width: 100%;
+  height: 112px;
 
   background-color: var(--light);
 
@@ -314,9 +320,8 @@ main {
 
   background-color: var(--white-background);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item:not(:nth-child(4n)) {
@@ -334,25 +339,34 @@ main {
 
 .team-icon-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
   line-height: 0;
 }
 
-.team-icon-list li {
+.socialmedia-link {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-brand);
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   overflow: hidden;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--light);
 }
 
-.team-icon-list li:hover,
-.team-icon-list li:focus {
+.socialmedia-list-item {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--light);
+}
+
+.socialmedia-link:hover,
+.socialmedia-link:focus {
   background-color: var(--pressed-state);
   cursor: pointer;
 }
@@ -394,9 +408,8 @@ main {
 }
 
 .portfolio-list-item:hover {
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item:not(:nth-child(3n)) {
@@ -433,7 +446,7 @@ main {
 }
 
 .portfolio-list-item:hover .overlay {
-  transform: translate(0);
+  transform: translate(0%);
 }
 
 .portfolio-list-item:hover {
