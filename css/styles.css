@@ -181,14 +181,14 @@ main {
 
 .hero {
   max-width: 1440px;
-  background-image: linear-gradient(
+  background-color: var(--dark);
+  background: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(/images/background/hero.jpg);
   background-repeat: no-repeat;
-  background-color: var(--dark);
   background-position: center;
   background-size: cover;
 
@@ -286,8 +286,6 @@ main {
   height: 112px;
 
   background-color: var(--light);
-
-  text-align: center;
 }
 /* OUR TEAM */
 
